@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Project Title</title>
+<meta charset="utf-8">
+<meta name="viewport" content="target-densitydpi=device-dpi, width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, minimal-ui" />
+<style> @-ms-viewport { width: device-width; } </style>
+<link rel="stylesheet" href="vendor/reset.min.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="multiple-scenes ">
+
+<div id="pano"></div>
+
+<div id="sceneList">
+  <ul class="scenes">
+    
+      <a href="javascript:void(0)" class="scene" data-id="0-vstup">
+        <li class="text">Vstup</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="1-jdelna-chodba">
+        <li class="text">Jídelna-Chodba</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="2-jdelna">
+        <li class="text">Jídelna</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="3-vdejna">
+        <li class="text">Výdejna</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="4-chodba-k-prvodcovn">
+        <li class="text">Chodba k průvodcovně</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="5-chodba-piano-">
+        <li class="text">Chodba piano </li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="6-chodba-u-kuchyky">
+        <li class="text">Chodba u kuchyňky</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="7-chodba-klub">
+        <li class="text">Chodba klub</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="8-jezero">
+        <li class="text">Jezero</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="9-klub">
+        <li class="text">Klub</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="10-korl">
+        <li class="text">Korál</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="11-kuchyka">
+        <li class="text">Kuchyňka</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="12-les">
+        <li class="text">Les</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="13-louka">
+        <li class="text">Louka</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="14-metropole">
+        <li class="text">Metropole</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="15-prales">
+        <li class="text">Prales</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="16-drna">
+        <li class="text">Řádírna</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="17-sklenk">
+        <li class="text">Skleník</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="18-stna">
+        <li class="text">Stěna</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="19-zahrada">
+        <li class="text">Zahrada</li>
+      </a>
+    
+  </ul>
+</div>
+
+<div id="titleBar">
+  <h1 class="sceneName"></h1>
+</div>
+
+<a href="javascript:void(0)" id="autorotateToggle">
+  <img class="icon off" src="img/play.png">
+  <img class="icon on" src="img/pause.png">
+</a>
+
+<a href="javascript:void(0)" id="fullscreenToggle">
+  <img class="icon off" src="img/fullscreen.png">
+  <img class="icon on" src="img/windowed.png">
+</a>
+
+<a href="javascript:void(0)" id="sceneListToggle">
+  <img class="icon off" src="img/expand.png">
+  <img class="icon on" src="img/collapse.png">
+</a>
+
+<a href="javascript:void(0)" id="viewUp" class="viewControlButton viewControlButton-1">
+  <img class="icon" src="img/up.png">
+</a>
+<a href="javascript:void(0)" id="viewDown" class="viewControlButton viewControlButton-2">
+  <img class="icon" src="img/down.png">
+</a>
+<a href="javascript:void(0)" id="viewLeft" class="viewControlButton viewControlButton-3">
+  <img class="icon" src="img/left.png">
+</a>
+<a href="javascript:void(0)" id="viewRight" class="viewControlButton viewControlButton-4">
+  <img class="icon" src="img/right.png">
+</a>
+<a href="javascript:void(0)" id="viewIn" class="viewControlButton viewControlButton-5">
+  <img class="icon" src="img/plus.png">
+</a>
+<a href="javascript:void(0)" id="viewOut" class="viewControlButton viewControlButton-6">
+  <img class="icon" src="img/minus.png">
+</a>
+
+<script src="vendor/screenfull.min.js" ></script>
+<script src="vendor/bowser.min.js" ></script>
+<script src="vendor/marzipano.js" ></script>
+
+<script src="data.js"></script>
+<script src="index.js"></script>
+
+</body>
+</html>
